@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Test Flappy Bird</string>
+    <string name="touch">Touch</string>
+</resources>
