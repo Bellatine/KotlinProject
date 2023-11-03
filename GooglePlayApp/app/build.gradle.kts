@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.namng.googleplayapp"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.namng.googleplayapp"
