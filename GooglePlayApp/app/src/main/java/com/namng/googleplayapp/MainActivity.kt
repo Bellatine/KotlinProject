@@ -44,17 +44,20 @@ class MainActivity : AppCompatActivity() {
             "namng app",
             "namng vjppro"
         )
+
         val categories = arrayListOf<CategoryModel>()
         repeat(6){
             val index = it
             categories.add(CategoryModel(category_names[index]))
         }
+
         val categoryAdapter = CategoryAdapter(categories, object : CategoryAdapter.ItemClickListener {
             override fun ItemClick(position: Int) {
                 TODO("Not yet implemented")
 
             }
         })
+
         val categoryRecyclerView = findViewById<RecyclerView>(R.id.category_recycler_view)
         categoryRecyclerView.layoutManager = LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false)
         categoryRecyclerView.adapter = categoryAdapter
@@ -65,6 +68,7 @@ class MainActivity : AppCompatActivity() {
             val index2 = it/3 + 1
             apps.add(AppModel(app_names[it], resources.getIdentifier("icon_$index2$index1", "drawable", packageName),numberStars[it]))
         }
+
         val appAdapter = AppAdapter(apps, object : AppAdapter.ItemClickListener{
             override fun ItemClick(position: Int){
 
@@ -75,11 +79,13 @@ class MainActivity : AppCompatActivity() {
         repeat(5){
             listapps.add(ListModel(listapps_names[it],appAdapter))
         }
+
         val listAdapter = ListAdapter(this, listapps, object : ListAdapter.ItemClickListener{
             override  fun ItemClick(position: Int){
 
             }
         })
+
         val listAppRecyclerView = findViewById<RecyclerView>(R.id.listapp_recycler_view)
         listAppRecyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false)
         listAppRecyclerView.adapter = listAdapter
