@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">PhoneDirectory</string>
+    <string name="header">NamNG\'sPhone</string>
+    <string name="name">NamNG</string>
+    <string name="phone">Điện thoại</string>
+    <string name="phone_number">0973881925</string>
+    <string name="sub_phone0">Di động</string>
+    <string name="account">TÀI KHOẢN</string>
+    <string name="email">EMAIL</string>
+    <string name="email_example">nam.ng205103@sis.hust.edu.vn</string>
+    <string name="company">Cơ quan</string>
+    <string name="group">nhóm</string>
+    <string name="company_name">HaNoi University of Science and Technology</string>
+    <string name="delete">Xóa</string>
+    <string name="setting">Cài đặt danh bạ</string>
+    <string name="share">Chia sẻ</string>
+    <string name="manage">Quản lý danh bạ</string>
+    <string name="help">Trợ giúp</string>
+</resources>

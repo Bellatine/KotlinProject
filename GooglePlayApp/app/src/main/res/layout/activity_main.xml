@@ -107,7 +107,6 @@
             app:layout_constraintTop_toBottomOf="@+id/category_recycler_view"
             app:layout_constraintBottom_toTopOf="@+id/end_bar"/>
 
-
     </LinearLayout>
 
     <LinearLayout
@@ -115,6 +114,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:background="#ffffff"
         android:paddingLeft="7dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/alphabet"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:text="@string/name"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textStyle="normal"
+            tools:ignore="InvalidId,MissingConstraints"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical|left"/>
+
+        <ImageButton
+            android:id="@+id/call"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/sym_action_call" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
