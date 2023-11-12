@@ -16,4 +16,6 @@
     <string name="share">Chia sẻ</string>
     <string name="manage">Quản lý danh bạ</string>
     <string name="help">Trợ giúp</string>
+    <string name="add">Thêm</string>
+    <string name="hint">Search Phone Number</string>
 </resources>

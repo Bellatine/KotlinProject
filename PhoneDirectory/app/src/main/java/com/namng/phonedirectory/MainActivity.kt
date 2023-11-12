@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.ContextMenu
 import android.view.Menu
+import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import android.widget.AdapterView.AdapterContextMenuInfo
@@ -101,25 +102,26 @@ class MainActivity : AppCompatActivity() {
         return super.onContextItemSelected(item)
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.main_menu,menu)
-        return super.onCreateOptionsMenu(menu)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if(item.itemId == R.id.action_add){
-            Log.v("TAG", "Add new menu")
-        }else if(item.itemId == R.id.action_delete){
-            Log.v("TAG", "Delete")
-        }else if(item.itemId == R.id.share){
-            Log.v("TAG", "Share")
-        }else if(item.itemId == R.id.action_setting){
-            Log.v("TAG", "Setting")
-        }else if(item.itemId == R.id.manage){
-            Log.v("TAG", "Manage")
-        }else if(item.itemId == R.id.help){
-            Log.v("TAG", "Help")
-        }
-        return super.onOptionsItemSelected(item)
-    }
+//    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+//        val inflater: MenuInflater = menuInflater
+//        inflater.inflate(R.menu.main_menu,menu)
+//        return true
+//    }
+//
+//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+//        if(item.itemId == R.id.action_add){
+//            Log.v("TAG", "Add new menu")
+//        }else if(item.itemId == R.id.action_delete){
+//            Log.v("TAG", "Delete")
+//        }else if(item.itemId == R.id.share){
+//            Log.v("TAG", "Share")
+//        }else if(item.itemId == R.id.action_setting){
+//            Log.v("TAG", "Setting")
+//        }else if(item.itemId == R.id.manage){
+//            Log.v("TAG", "Manage")
+//        }else if(item.itemId == R.id.help){
+//            Log.v("TAG", "Help")
+//        }
+//        return super.onOptionsItemSelected(item)
+//    }
 }
